@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        ts_i18n_manager.start(appDelegate: self)
+//        window?.rootViewController = ViewController()
         // Override point for customization after application launch.
         return true
     }
@@ -43,4 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+extension AppDelegate : TSI18nUpdateAppDelegate{
+    func updateApplication() {
+        window?.rootViewController = ViewController()
+    }
+    func showActivityView(activityView: UIView) {
+        
+    }
+}
+
 

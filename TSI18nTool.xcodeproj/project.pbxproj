@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16187780A51588CCE2CFAFA8 /* Pods_TSI18nTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC91747BDCBA6EF2C47DEA4 /* Pods_TSI18nTool.framework */; };
 		511D805F210816D60080036C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D805E210816D60080036C /* AppDelegate.swift */; };
 		511D8061210816D60080036C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8060210816D60080036C /* ViewController.swift */; };
 		511D8064210816D60080036C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511D8062210816D60080036C /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		511D8069210816D70080036C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511D8067210816D70080036C /* LaunchScreen.storyboard */; };
 		511D8074210816D70080036C /* TSI18nToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8073210816D70080036C /* TSI18nToolTests.swift */; };
 		511D807F210816D70080036C /* TSI18nToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D807E210816D70080036C /* TSI18nToolUITests.swift */; };
+		511D8091210828BD0080036C /* TSI18n_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8090210828BD0080036C /* TSI18n_Manager.swift */; };
+		511D8093210829790080036C /* TSI18nUpdateAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8092210829790080036C /* TSI18nUpdateAppProtocol.swift */; };
+		511D809521085A1F0080036C /* TSI18n_PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D809421085A1F0080036C /* TSI18n_PersistenceManager.swift */; };
+		511D8097210865A50080036C /* TSI18n_ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8096210865A50080036C /* TSI18n_ActivityView.swift */; };
+		511D809A210891A40080036C /* TSI18nExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8099210891A40080036C /* TSI18nExtension.swift */; };
+		511D809D210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D809C210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift */; };
+		511D809F210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D809E210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		244790803901B908A627C025 /* Pods-TSI18nTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSI18nTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool.release.xcconfig"; sourceTree = "<group>"; };
+		348BDEE2BA2E922C0C7134E3 /* Pods-TSI18nTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSI18nTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool.debug.xcconfig"; sourceTree = "<group>"; };
 		511D805B210816D60080036C /* TSI18nTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSI18nTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511D805E210816D60080036C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		511D8060210816D60080036C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,14 @@
 		511D807A210816D70080036C /* TSI18nToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSI18nToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511D807E210816D70080036C /* TSI18nToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18nToolUITests.swift; sourceTree = "<group>"; };
 		511D8080210816D80080036C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511D8090210828BD0080036C /* TSI18n_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_Manager.swift; sourceTree = "<group>"; };
+		511D8092210829790080036C /* TSI18nUpdateAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18nUpdateAppProtocol.swift; sourceTree = "<group>"; };
+		511D809421085A1F0080036C /* TSI18n_PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_PersistenceManager.swift; sourceTree = "<group>"; };
+		511D8096210865A50080036C /* TSI18n_ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ActivityView.swift; sourceTree = "<group>"; };
+		511D8099210891A40080036C /* TSI18nExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18nExtension.swift; sourceTree = "<group>"; };
+		511D809C210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ExchangeLanguageViewController.swift; sourceTree = "<group>"; };
+		511D809E210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ExchangeLanguageListTableViewCell.swift; sourceTree = "<group>"; };
+		9FC91747BDCBA6EF2C47DEA4 /* Pods_TSI18nTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSI18nTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16187780A51588CCE2CFAFA8 /* Pods_TSI18nTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				511D8072210816D70080036C /* TSI18nToolTests */,
 				511D807D210816D70080036C /* TSI18nToolUITests */,
 				511D805C210816D60080036C /* Products */,
+				C6FA720ABA4712AAC78615CE /* Pods */,
+				EC82D705F396DB01486CBABA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +118,7 @@
 		511D805D210816D60080036C /* TSI18nTool */ = {
 			isa = PBXGroup;
 			children = (
+				511D808C210827D50080036C /* TSI18n */,
 				511D805E210816D60080036C /* AppDelegate.swift */,
 				511D8060210816D60080036C /* ViewController.swift */,
 				511D8062210816D60080036C /* Main.storyboard */,
@@ -125,6 +147,77 @@
 			path = TSI18nToolUITests;
 			sourceTree = "<group>";
 		};
+		511D808C210827D50080036C /* TSI18n */ = {
+			isa = PBXGroup;
+			children = (
+				511D809B210AB5B60080036C /* ExchangeLanguage */,
+				511D8098210891880080036C /* UIExtension */,
+				511D808F210828750080036C /* Handle */,
+				511D808D210828600080036C /* Protocol */,
+				511D808E210828600080036C /* View */,
+				511D8090210828BD0080036C /* TSI18n_Manager.swift */,
+			);
+			path = TSI18n;
+			sourceTree = "<group>";
+		};
+		511D808D210828600080036C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				511D8092210829790080036C /* TSI18nUpdateAppProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		511D808E210828600080036C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				511D8096210865A50080036C /* TSI18n_ActivityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		511D808F210828750080036C /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				511D809421085A1F0080036C /* TSI18n_PersistenceManager.swift */,
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		511D8098210891880080036C /* UIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				511D8099210891A40080036C /* TSI18nExtension.swift */,
+			);
+			path = UIExtension;
+			sourceTree = "<group>";
+		};
+		511D809B210AB5B60080036C /* ExchangeLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				511D809C210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift */,
+				511D809E210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift */,
+			);
+			path = ExchangeLanguage;
+			sourceTree = "<group>";
+		};
+		C6FA720ABA4712AAC78615CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				348BDEE2BA2E922C0C7134E3 /* Pods-TSI18nTool.debug.xcconfig */,
+				244790803901B908A627C025 /* Pods-TSI18nTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC82D705F396DB01486CBABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FC91747BDCBA6EF2C47DEA4 /* Pods_TSI18nTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 511D8083210816D80080036C /* Build configuration list for PBXNativeTarget "TSI18nTool" */;
 			buildPhases = (
+				879E9372353B4836A1022FCE /* [CP] Check Pods Manifest.lock */,
 				511D8057210816D60080036C /* Sources */,
 				511D8058210816D60080036C /* Frameworks */,
 				511D8059210816D60080036C /* Resources */,
+				1BBB8FC151308537BA9B7169 /* [CP] Embed Pods Frameworks */,
+				9010334602EAB3EC22C7D16A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +283,7 @@
 		511D8053210816D50080036C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TSI18n_;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "洪利";
@@ -251,12 +348,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BBB8FC151308537BA9B7169 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TSDataPersistence/TSDataPersistence.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSDataPersistence.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879E9372353B4836A1022FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSI18nTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9010334602EAB3EC22C7D16A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		511D8057210816D60080036C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511D809F210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift in Sources */,
+				511D809A210891A40080036C /* TSI18nExtension.swift in Sources */,
+				511D8091210828BD0080036C /* TSI18n_Manager.swift in Sources */,
+				511D809D210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift in Sources */,
+				511D8093210829790080036C /* TSI18nUpdateAppProtocol.swift in Sources */,
+				511D809521085A1F0080036C /* TSI18n_PersistenceManager.swift in Sources */,
 				511D8061210816D60080036C /* ViewController.swift in Sources */,
+				511D8097210865A50080036C /* TSI18n_ActivityView.swift in Sources */,
 				511D805F210816D60080036C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,15 +590,14 @@
 		};
 		511D8084210816D80080036C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348BDEE2BA2E922C0C7134E3 /* Pods-TSI18nTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +607,14 @@
 		};
 		511D8085210816D80080036C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244790803901B908A627C025 /* Pods-TSI18nTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nTool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -470,11 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nToolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nToolTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nToolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nToolTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -511,11 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nToolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nToolUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,11 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SY74Q2CEY;
 				INFOPLIST_FILE = TSI18nToolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TSI18n-.TSI18nToolUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
