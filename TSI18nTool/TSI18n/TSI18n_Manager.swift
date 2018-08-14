@@ -21,7 +21,7 @@ public let ts_i18n_manager = TSI18n_Manager.createManager()
 public class TSI18n_Manager: NSObject {
 
     var delegater : TSI18nUpdateAppDelegate?
-    var activityView = TSI18n_ActivityView.createActivityView()
+    var activityView = TSI18n_ActivityViewController()
     
     static var configSinglation : TSI18n_Manager?
     class func createManager() ->TSI18n_Manager {
@@ -39,13 +39,12 @@ public class TSI18n_Manager: NSObject {
             if contentInfo != nil {
                 //展示遮盖层view
                 if self.delegater != nil {
-                    self.delegater?.showActivityView(activityView: activityView)
+                    (self.delegater as! AppDelegate).window?.rootViewController = activityView
                 }
                 //开始更新
                 ts_i18n_persistence.downloadLanguageSource(url:"https://static.mojieai.com/zh.zip",language: currentLanguage()!) { (state) in
                     //更新结束，回调刷新window
                     self.updateApp()
-                    self.activityView.removeFromSuperview()
                 }
             }else{
                 self.updateApp()
@@ -53,6 +52,15 @@ public class TSI18n_Manager: NSObject {
         }
         
         
+    }
+    
+    //暂停下载任务
+    public func onSuspendMession() {
+        ts_i18n_persistence.onSuspend()
+    }
+    //重启下载任务
+    public func onResumeMession() {
+        ts_i18n_persistence.onResume()
     }
 }
 

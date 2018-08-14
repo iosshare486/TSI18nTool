@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95593DB84C76170080EAC039B319AAAC"
+               BlueprintIdentifier = "3CB141E429895548A63ECDC70DFCB258"
                BlueprintName = "TSDataPersistence"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TSDataPersistence.framework">

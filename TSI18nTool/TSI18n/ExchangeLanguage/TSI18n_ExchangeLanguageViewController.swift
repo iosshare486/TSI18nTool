@@ -8,9 +8,9 @@
 
 import UIKit
 import SnapKit
+import TSCustomUIKit
 class TSI18n_ExchangeLanguageViewController: UIViewController {
 
-    var activityview = UIActivityIndicatorView()
     var selectLanguage : TSI18nLanguageListModel?
     var dataSource = Array<TSI18nLanguageListModel>(){
         didSet{
@@ -31,17 +31,6 @@ class TSI18n_ExchangeLanguageViewController: UIViewController {
         self.title = "语言设置"
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-        
-        activityview.isHidden = true
-        activityview.backgroundColor = UIColor.black
-        activityview.color = .white
-        activityview.activityIndicatorViewStyle = .whiteLarge
-        activityview.hidesWhenStopped = true
-        view.addSubview(activityview)
-        activityview.snp.makeConstraints { (make) in
-            make.width.height.equalTo(60)
-            make.center.equalToSuperview()
-        }
         
         
         //完成
@@ -68,16 +57,8 @@ class TSI18n_ExchangeLanguageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @objc func tapped1(){
-        activityview.stopAnimating()
+        view.ts_toast(content: "语言设置成功...")
         ts_i18n_persistence.downloadLanguageSource(url:(selectLanguage?.downloadurl)! ,language: (selectLanguage?.language)!) { (state) in
-            print("完成")
-            //设置本App缺省语言
-            let defaultStand = UserDefaults.standard
-            let defaultKey = "language"
-            defaultStand.set(self.selectLanguage?.language, forKey: defaultKey)
-            
-            
-            self.activityview.stopAnimating()
             self.dismiss(animated: true, completion: nil)
         }
     }

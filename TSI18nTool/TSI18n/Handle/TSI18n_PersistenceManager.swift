@@ -32,6 +32,7 @@ public class TSI18n_PersistenceManager: NSObject {
             return configSinglation!
         }
     }
+    
     //查询本地是否有相应资源，有则返回字典，包含资源版本
     public func getLanguageCache(language:String) -> [String : String]? {
         //获取本地缓存资源
@@ -60,7 +61,7 @@ public class TSI18n_PersistenceManager: NSObject {
         downloadFile(url: url)
     }
     //挂起下载
-    public func onSuspend(sender: AnyObject) {
+    public func onSuspend() {
         if(self.downloadTask != nil)
         {
             //挂起下载任务，将下载好的数据进行保存
@@ -72,20 +73,21 @@ public class TSI18n_PersistenceManager: NSObject {
         //        downloadTask!.suspend()
     }
     //恢复下载
-    public func onResume(sender: AnyObject) {
-        if(downloadTask == nil)
-        {
-            URLSession.shared
+    public func onResume() {
+//        if(downloadTask == nil)
+//        {
+//            URLSession.shared
             //判断是否又已下载数据，有的话就断点续传，没有就完全重新下载
             if(self.partialData != nil)
             {
                 self.downloadTask = self.session?.downloadTask(withResumeData: self.partialData! as Data)
+                downloadTask!.resume()
             }
-            else{
-                self.downloadTask = self.session?.downloadTask(with: self.request! as URLRequest)
-            }
-        }
-        downloadTask!.resume()
+//            else{
+//                self.downloadTask = self.session?.downloadTask(with: self.request! as URLRequest)
+//            }
+//        }
+        
     }
     //开始下载文件
     public func downloadFile(url:String)
@@ -146,7 +148,7 @@ extension TSI18n_PersistenceManager : URLSessionDownloadDelegate{
                     didFinishDownloadingTo location: URL) {
         //下载结束
         print("下载结束")
-        
+        self.downloadTask = nil
 //        输出下载文件原来的存放目录
 //        print("location:\(location)")
         //location位置转换

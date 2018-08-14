@@ -35,7 +35,7 @@ pod 'SnapKit'
 #TSToastView (消息Toast)
 #pod 'TSToastView'
 #TSCustomUIKit (基于UI封装的自定义控件)
-#pod 'TSCustomUIKit', :git => 'http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git'
+pod 'TSCustomUIKit', :git => 'http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git'
 
 
 

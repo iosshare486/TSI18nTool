@@ -1,0 +1,96 @@
+{
+  "name": "TSCustomUIKit",
+  "version": "0.0.8",
+  "summary": "this is app custom UIKit",
+  "description": "这是一个通用的UI组件，封装了一些常用的UI，segment pageController uiimage等等",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "homepage": "https://www.jianshu.com/u/8a7102c0b777",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yuchenH": "huangyuchen@caiqr.com"
+  },
+  "source": {
+    "git": "http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git",
+    "tag": "0.0.8"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "swift_version": "4.0",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "PageController",
+      "source_files": "TSCustomUIKit/pageController/*",
+      "dependencies": {
+        "TSUtility": [
+
+        ]
+      }
+    },
+    {
+      "name": "UIExtension",
+      "source_files": "TSCustomUIKit/UIExtension/*"
+    },
+    {
+      "name": "Segmented",
+      "source_files": "TSCustomUIKit/Segmented/*",
+      "dependencies": {
+        "TSUtility": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "TableView",
+      "source_files": "TSCustomUIKit/TableView/*",
+      "dependencies": {
+        "TSRefresh": [
+
+        ]
+      }
+    },
+    {
+      "name": "TSRPhotoBrowser",
+      "source_files": "TSCustomUIKit/TSRPhotoBrowser/*",
+      "dependencies": {
+        "Kingfisher": [
+
+        ]
+      }
+    },
+    {
+      "name": "TSTabbarController",
+      "source_files": [
+        "TSCustomUIKit/TSTabbarController/TSTabbarControl/*",
+        "TSCustomUIKit/TSTabbarController/TSTabbarUtility/*"
+      ]
+    },
+    {
+      "name": "KeyBoardBar",
+      "source_files": "TSCustomUIKit/KeyBoardBar/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "TSTextfield",
+      "source_files": "TSCustomUIKit/TSTextfield/*"
+    },
+    {
+      "name": "TSToast",
+      "source_files": "TSCustomUIKit/TSToast/*"
+    }
+  ]
+}

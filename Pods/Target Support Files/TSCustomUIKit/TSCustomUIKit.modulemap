@@ -1,0 +1,6 @@
+framework module TSCustomUIKit {
+  umbrella header "TSCustomUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

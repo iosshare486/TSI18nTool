@@ -1,18 +1,60 @@
 PODS:
+  - Kingfisher (4.8.1)
   - SnapKit (4.0.0)
   - SSZipArchive (2.1.3)
+  - TSCustomUIKit (0.0.8):
+    - TSCustomUIKit/KeyBoardBar (= 0.0.8)
+    - TSCustomUIKit/PageController (= 0.0.8)
+    - TSCustomUIKit/Segmented (= 0.0.8)
+    - TSCustomUIKit/TableView (= 0.0.8)
+    - TSCustomUIKit/TSRPhotoBrowser (= 0.0.8)
+    - TSCustomUIKit/TSTabbarController (= 0.0.8)
+    - TSCustomUIKit/TSTextfield (= 0.0.8)
+    - TSCustomUIKit/TSToast (= 0.0.8)
+    - TSCustomUIKit/UIExtension (= 0.0.8)
+  - TSCustomUIKit/KeyBoardBar (0.0.8):
+    - SnapKit
+  - TSCustomUIKit/PageController (0.0.8):
+    - TSUtility
+  - TSCustomUIKit/Segmented (0.0.8):
+    - SnapKit
+    - TSUtility
+  - TSCustomUIKit/TableView (0.0.8):
+    - TSRefresh
+  - TSCustomUIKit/TSRPhotoBrowser (0.0.8):
+    - Kingfisher
+  - TSCustomUIKit/TSTabbarController (0.0.8)
+  - TSCustomUIKit/TSTextfield (0.0.8)
+  - TSCustomUIKit/TSToast (0.0.8)
+  - TSCustomUIKit/UIExtension (0.0.8)
   - TSDataPersistence (0.2.2)
+  - TSRefresh (1.0.2)
+  - TSUtility (1.0.3)
 
 DEPENDENCIES:
   - SnapKit
   - SSZipArchive
+  - TSCustomUIKit (from `http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git`)
   - TSDataPersistence
 
+EXTERNAL SOURCES:
+  TSCustomUIKit:
+    :git: http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git
+
+CHECKOUT OPTIONS:
+  TSCustomUIKit:
+    :commit: 7877c56667d84a50b02b50958e7226635e6506bc
+    :git: http://gitlab.caiqr.com/ios_module/TSCustomUIKit.git
+
 SPEC CHECKSUMS:
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SSZipArchive: 51a800ebb77f95a8329b6ced1faaff394b47f509
+  TSCustomUIKit: c0ea5c711c045c98a5eea89f3e83cc9b999cca40
   TSDataPersistence: 6f07b05cdec19a379a105c032f52bb499c7b0d4a
+  TSRefresh: 15467bfd1387552ab77742a30b3355d0f1aa16fc
+  TSUtility: e4227ac9d5d2f6f6a629eead65dc628883ced2d0
 
-PODFILE CHECKSUM: d5cc01faee2a4674e478a20da66447087cb5837e
+PODFILE CHECKSUM: f6c0585715b12d514c5dabb78829618ebd4f9952
 
 COCOAPODS: 1.4.0

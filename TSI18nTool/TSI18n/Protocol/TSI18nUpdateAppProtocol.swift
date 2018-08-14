@@ -11,8 +11,7 @@ import UIKit
 public protocol TSI18nUpdateAppDelegate {
     //国际化工具回调，通知AppDelegate去设置window.rootVC
     func updateApplication()
-    //启动更新时 展示资源更新业务view
-    func showActivityView(activityView:UIView)
 }
+
 
 

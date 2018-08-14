@@ -134,14 +134,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSCustomUIKit/TSCustomUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TSDataPersistence/TSDataPersistence.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSRefresh/TSRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSUtility/TSUtility.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSCustomUIKit/TSCustomUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TSDataPersistence/TSDataPersistence.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSRefresh/TSRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TSUtility/TSUtility.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -27,11 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        //进入后台
+        //暂停任务，保留节点
+        ts_i18n_manager.onSuspendMession()
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
+//         NSLog(@"由后台进入前台，applicationWillEnterForeground");
+        //开启断点续传
+        ts_i18n_manager.onResumeMession()
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
 
@@ -46,12 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
 extension AppDelegate : TSI18nUpdateAppDelegate{
     func updateApplication() {
         window?.rootViewController = ViewController()
-    }
-    func showActivityView(activityView: UIView) {
-        
     }
 }
 

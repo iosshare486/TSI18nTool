@@ -22,6 +22,7 @@
 		511D809A210891A40080036C /* TSI18nExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D8099210891A40080036C /* TSI18nExtension.swift */; };
 		511D809D210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D809C210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift */; };
 		511D809F210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D809E210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift */; };
+		51776294210EB7D6004A023B /* TSI18n_ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51776293210EB7D6004A023B /* TSI18n_ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		511D8099210891A40080036C /* TSI18nExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18nExtension.swift; sourceTree = "<group>"; };
 		511D809C210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ExchangeLanguageViewController.swift; sourceTree = "<group>"; };
 		511D809E210B14A40080036C /* TSI18n_ExchangeLanguageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ExchangeLanguageListTableViewCell.swift; sourceTree = "<group>"; };
+		51776293210EB7D6004A023B /* TSI18n_ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSI18n_ActivityViewController.swift; sourceTree = "<group>"; };
 		9FC91747BDCBA6EF2C47DEA4 /* Pods_TSI18nTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSI18nTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				511D8096210865A50080036C /* TSI18n_ActivityView.swift */,
+				51776293210EB7D6004A023B /* TSI18n_ActivityViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,15 +359,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSI18nTool/Pods-TSI18nTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TSCustomUIKit/TSCustomUIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TSDataPersistence/TSDataPersistence.framework",
+				"${BUILT_PRODUCTS_DIR}/TSRefresh/TSRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/TSUtility/TSUtility.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSCustomUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSDataPersistence.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSUtility.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,6 +428,7 @@
 				511D809D210ABBAC0080036C /* TSI18n_ExchangeLanguageViewController.swift in Sources */,
 				511D8093210829790080036C /* TSI18nUpdateAppProtocol.swift in Sources */,
 				511D809521085A1F0080036C /* TSI18n_PersistenceManager.swift in Sources */,
+				51776294210EB7D6004A023B /* TSI18n_ActivityViewController.swift in Sources */,
 				511D8061210816D60080036C /* ViewController.swift in Sources */,
 				511D8097210865A50080036C /* TSI18n_ActivityView.swift in Sources */,
 				511D805F210816D60080036C /* AppDelegate.swift in Sources */,
